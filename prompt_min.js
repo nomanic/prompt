@@ -1,7 +1,7 @@
 /**
  * prompt.js
  *
- * A JavaScript micro-framework for animating elements
+ * A JavaScript micro-framework for alert windows
  *
  * @author     Neil Oman
  * @version    1
