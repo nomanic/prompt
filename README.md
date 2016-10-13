@@ -44,11 +44,11 @@ defwin=function() {
 
 ## Options
 
-**style** skin, can be either 'default','plain','facebook' or 'mac'
-**backOpacity** opacity of cover over screen
-**durationin** duration of fade in on show
-**durationout** duration of fade out on hide
-**title** alert box title
-**text** alert box text
-**buttons** array of buttons, text (text), (optional) color (color) and (optional) callback (fn)
+**style** skin, can be either 'default','plain','facebook' or 'mac'   
+**backOpacity** opacity of cover over screen   
+**durationin** duration of fade in on show   
+**durationout** duration of fade out on hide   
+**title** alert box title   
+**text** alert box text   
+**buttons** array of buttons, text (text), (optional) color (color) and (optional) callback (fn)   
 If no buttons are defined, OK is shown, which hides box on click
