@@ -1,0 +1,60 @@
+<html>
+<head>
+	<script type="text/javascript" src="itsybitsytweener.js"></script>
+	<script type="text/javascript" src="prompt.js"></script>
+	<style type="text/css">
+	body {
+		margin:0px;
+		padding:0px;
+	}
+	</style>
+</head>
+<body>
+<a onclick="defwin();" style="cursor:pointer;">Default Window</a><br/>
+<a onclick="plainwin();" style="cursor:pointer;">Plain Window</a><br/>
+<a onclick="facewin();" style="cursor:pointer;">Facebook Window</a><br/>
+<a onclick="macwin();" style="cursor:pointer;">Mac Window</a><br/>
+<script type="text/javascript">
+defwin=function() {
+	prompt.show({
+		style:'default',
+		backOpacity:0.3,
+		durationin:300,
+		title:'Warning Message!',
+		text:"On this panel you'll be able to organize the reports you created. You can also filter them by date and author.",
+		buttons: [{text:'YES',fn:function() {alert('Yes!');prompt.hide();}},{text:'NO',color:'#990000',fn:function() {alert('No!');prompt.hide();}}]
+	});
+}
+plainwin=function() {
+	prompt.show({
+		style:'plain',
+		backOpacity:0.7,
+		durationin:1000,
+		title:'Warning Message!',
+		text:"On this panel you'll be able to organize the reports you created. You can also filter them by date and author.",
+		buttons: [{text:'YES',fn:function() {alert('Yes!');prompt.hide();}},{text:'NO',color:'#990000',fn:function() {alert('No!');prompt.hide();}}]
+	});
+}
+facewin=function() {
+	prompt.show({
+		style:'facebook',
+		backOpacity:0,
+		durationin:1000,
+		title:'Warning Message!',
+		text:"On this panel you'll be able to organize the reports you created. You can also filter them by date and author.",
+		buttons: [{text:'YES',fn:function() {alert('Yes!');prompt.hide();}},{text:'NO',color:'#990000',fn:function() {alert('No!');prompt.hide();}}]
+	});
+}
+macwin=function() {
+	prompt.show({
+		style:'mac',
+		backOpacity:0,
+		durationin:1000,
+		title:'Warning Message!',
+		text:"On this panel you'll be able to organize the reports you created. You can also filter them by date and author.",
+		buttons: [{text:'YES',fn:function() {alert('Yes!');prompt.hide();}},{text:'NO',color:'#990000',fn:function() {alert('No!');prompt.hide();}}]
+	});
+}
+</script>
+</body>
+</html>
